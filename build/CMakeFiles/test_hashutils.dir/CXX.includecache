@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/wubai/tests/test_hashutils.cc
+../wubai/hashutils.h
+/root/wubai/wubai/hashutils.h
+iostream
+-
+
+/root/wubai/wubai/hashutils.h
+stdint.h
+-
+string
+-
+
