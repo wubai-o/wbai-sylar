@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror  -Wno-unused-function  -rdynamic CMakeFiles/main.dir/wubai/main.cc.o  -o ../bin/main -Wl,-rpath,/root/wubai/lib ../lib/libwubai.so -lpthread -ldl -lyaml-cpp -lmysqlclient -lssl -ljsoncpp_static 

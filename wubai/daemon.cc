@@ -7,6 +7,7 @@
 #include<wait.h>
 #include<string>
 #include<sstream>
+#include<iostream>
 
 namespace wubai {
     
@@ -30,7 +31,7 @@ static int real_daemon(int argc, char** argv,
         if(pid == 0) {
             ProcessInfoMgr::GetInstance()->main_id = getpid();
             ProcessInfoMgr::GetInstance()->main_start_time = time(0);
-            WUBAI_LOG_INFO(g_logger) << "process start pid = " << getpid();
+            std::cout << "process start pid = " << getpid() << std::endl;
             return real_start(argc, argv, main_cb);
         } else if(pid < 0) {
             WUBAI_LOG_ERROR(g_logger) << "fork fail return = " << pid <<

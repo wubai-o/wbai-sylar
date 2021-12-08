@@ -4,11 +4,13 @@
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../tests/test_application.cc
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/address.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/application.h
+CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/config.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/daemon.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/env.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/fiber.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/hook.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/iomanager.h
+CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/log.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/macro.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/noncopyable.h
 CMakeFiles/test_application.dir/tests/test_application.cc.o: ../wubai/scheduler.h

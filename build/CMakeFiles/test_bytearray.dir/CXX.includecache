@@ -297,6 +297,8 @@ socket.h
 /root/wubai/wubai/socket.h
 noncopyable.h
 /root/wubai/wubai/noncopyable.h
+config.h
+/root/wubai/wubai/config.h
 memory
 -
 functional

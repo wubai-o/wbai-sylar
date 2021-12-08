@@ -1,7 +1,10 @@
 #include"socket_stream.h"
+#include"log.h"
 
 
 namespace wubai {
+
+static wubai::Logger::ptr g_logger = WUBAI_LOG_ROOT();
 
 SocketStream::SocketStream(Socket::ptr sock, bool owner) 
     :m_socket(sock)

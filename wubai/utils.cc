@@ -8,6 +8,9 @@
 #include<iostream>
 #include<sys/types.h>
 #include<sys/stat.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include<ifaddrs.h>
 
 namespace wubai {
 
@@ -66,7 +69,92 @@ std::string formatTime(time_t time, const std::string& format) {
     localtime_r(&time, &tm);
     strftime(buf, sizeof(buf), format.c_str(), &tm);
     return buf;
-} 
+}
+
+int8_t TypeUtil::ToChar(const std::string& str) {
+    if(str.empty()) {
+        return 0;
+    }
+    return *str.begin();
+}
+
+int64_t TypeUtil::Atoi(const std::string& str) {
+    if(str.empty()) {
+        return 0;
+    }
+    return strtoull(str.c_str(), nullptr, 10);
+}
+
+double TypeUtil::Atof(const std::string& str) {
+    if(str.empty()) {
+        return 0;
+    }
+    return atof(str.c_str());
+}
+
+int8_t TypeUtil::ToChar(const char* str) {
+    if(str == nullptr) {
+        return 0;
+    }
+    return str[0];
+}
+
+int64_t TypeUtil::Atoi(const char* str) {
+    if(str == nullptr) {
+        return 0;
+    }
+    return strtoull(str, nullptr, 0);   
+}
+double TypeUtil::Atof(const char* str) {
+    if(str == nullptr) {
+        return 0;
+    }
+    return atof(str);
+}
+
+
+in_addr_t GetIPv4Inet() {
+    struct ifaddrs* ifas = nullptr;
+    struct ifaddrs* ifa = nullptr;
+
+    in_addr_t localhost = inet_addr("127.0.0.1");
+    if(getifaddrs(&ifas)) {
+        WUBAI_LOG_ERROR(g_logger) << "getifaddrs errno=" << errno
+            << " errorstr=" << strerror(errno);
+        return localhost;
+    }
+
+    in_addr_t ipv4 = localhost;
+    for(ifa = ifas; ifa && ifa->ifa_addr; ifa = ifa->ifa_next) {
+        if(ifa->ifa_addr->sa_family != AF_INET) {
+            continue;
+        }
+        if(!strncasecmp(ifa->ifa_name, "lo", 2)) {
+            continue;
+        }
+        ipv4 = reinterpret_cast<sockaddr_in*>(ifa->ifa_addr)->sin_addr.s_addr;
+        if(ipv4 == localhost) {
+            continue;
+        }
+    }
+    if(ifas != nullptr) {
+        freeifaddrs(ifas);
+    }
+    return ipv4;
+}
+
+std::string _GetIPv4() {
+    std::shared_ptr<char> ipv4(new char[INET_ADDRSTRLEN], wubai::delete_array<char>);
+    memset(ipv4.get(), 0, INET_ADDRSTRLEN);
+    auto ia = GetIPv4Inet();
+    inet_ntop(AF_INET, &ia, ipv4.get(), INET_ADDRSTRLEN);
+    return ipv4.get();
+}
+
+std::string GetIPv4() {
+    static const std::string ip = _GetIPv4();
+    return ip;
+}
 
 static int __lstat(const char* file, struct stat* st = nullptr) {
     struct stat lst;

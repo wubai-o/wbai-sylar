@@ -5,11 +5,13 @@ CMakeFiles/test_application.dir/tests/test_application.cc.o
  /root/wubai/tests/test_application.cc
  /root/wubai/wubai/address.h
  /root/wubai/wubai/application.h
+ /root/wubai/wubai/config.h
  /root/wubai/wubai/daemon.h
  /root/wubai/wubai/env.h
  /root/wubai/wubai/fiber.h
  /root/wubai/wubai/hook.h
  /root/wubai/wubai/iomanager.h
+ /root/wubai/wubai/log.h
  /root/wubai/wubai/macro.h
  /root/wubai/wubai/noncopyable.h
  /root/wubai/wubai/scheduler.h

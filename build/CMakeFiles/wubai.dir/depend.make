@@ -26,10 +26,15 @@ CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/http_server.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/http_session.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/httpclient_parser.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/servlet.h
+CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/ws_server.h
+CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/ws_servlet.h
+CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/http/ws_session.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/iomanager.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/log.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/macro.h
+CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/module.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/protocol.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/scheduler.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/singleton.h
 CMakeFiles/wubai.dir/wubai/application.cc.o: ../wubai/socket.h
@@ -48,6 +53,91 @@ CMakeFiles/wubai.dir/wubai/bytearray.cc.o: ../wubai/noncopyable.h
 CMakeFiles/wubai.dir/wubai/bytearray.cc.o: ../wubai/singleton.h
 CMakeFiles/wubai.dir/wubai/bytearray.cc.o: ../wubai/thread.h
 CMakeFiles/wubai.dir/wubai/bytearray.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/address.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/chat/chat_servlet.cc
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/chat/chat_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/chat/protocol.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/config.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/http.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/http11_common.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/http11_parser.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/http_session.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/httpclient_parser.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/servlet.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/ws_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/http/ws_session.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/log.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/singleton.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/socket.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/socket_stream.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/address.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/application.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/chat/chat_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/chat/my_module.cc
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/chat/my_module.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/chat/resource_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/config.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/daemon.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/env.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/fiber.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/hook.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/http.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/http11_common.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/http11_parser.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/http_server.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/http_session.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/httpclient_parser.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/servlet.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/ws_server.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/ws_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/http/ws_session.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/iomanager.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/log.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/macro.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/module.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/protocol.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/scheduler.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/singleton.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/socket.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/socket_stream.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/tcp_server.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/timer.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: ../wubai/chat/protocol.cc
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: ../wubai/chat/protocol.h
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: ../wubai/jsonutil.h
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/address.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/chat/resource_servlet.cc
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/chat/resource_servlet.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/http.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/http11_common.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/http11_parser.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/http_session.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/httpclient_parser.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/http/servlet.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/log.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/singleton.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/socket.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/socket_stream.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/utils.h
 
 CMakeFiles/wubai.dir/wubai/config.cc.o: ../wubai/config.cc
 CMakeFiles/wubai.dir/wubai/config.cc.o: ../wubai/config.h
@@ -161,6 +251,7 @@ CMakeFiles/wubai.dir/wubai/http/http_parser.cc.o: ../wubai/utils.h
 
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/address.h
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/config.h
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/fiber.h
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/hook.h
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o: ../wubai/http/http.h
@@ -212,11 +303,14 @@ CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/http/http_session.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/http/httpclient_parser.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/http/servlet.cc
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/http/servlet.h
+CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/log.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/singleton.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/socket.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/socket_stream.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/stream.h
 CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/http/servlet.cc.o: ../wubai/utils.h
 
 CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o: ../wubai/address.h
 CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o: ../wubai/bytearray.h
@@ -325,6 +419,10 @@ CMakeFiles/wubai.dir/wubai/iomanager.cc.o: ../wubai/thread.h
 CMakeFiles/wubai.dir/wubai/iomanager.cc.o: ../wubai/timer.h
 CMakeFiles/wubai.dir/wubai/iomanager.cc.o: ../wubai/utils.h
 
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o: ../wubai/jsonutil.cc
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o: ../wubai/jsonutil.h
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o: ../wubai/utils.h
+
 CMakeFiles/wubai.dir/wubai/keshe/local_server.cc.o: ../wubai/address.h
 CMakeFiles/wubai.dir/wubai/keshe/local_server.cc.o: ../wubai/bytearray.h
 CMakeFiles/wubai.dir/wubai/keshe/local_server.cc.o: ../wubai/fiber.h
@@ -374,6 +472,20 @@ CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.o: /usr/include/mysql/mysql_time.h
 CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.o: /usr/include/mysql/mysql_version.h
 CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.o: /usr/include/mysql/typelib.h
 
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/config.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/env.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/library.cc
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/library.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/log.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/module.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/protocol.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/singleton.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/utils.h
+
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/config.h
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/log.cc
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/log.h
@@ -381,6 +493,35 @@ CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/noncopyable.h
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/singleton.h
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/thread.h
 CMakeFiles/wubai.dir/wubai/log.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/address.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/application.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/config.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/daemon.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/env.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/fiber.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/hook.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/iomanager.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/library.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/log.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/macro.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/module.cc
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/module.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/protocol.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/scheduler.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/singleton.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/socket.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/tcp_server.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/timer.h
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/utils.h
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/protocol.cc.o: ../wubai/protocol.cc
+CMakeFiles/wubai.dir/wubai/protocol.cc.o: ../wubai/protocol.h
 
 CMakeFiles/wubai.dir/wubai/scheduler.cc.o: ../wubai/fiber.h
 CMakeFiles/wubai.dir/wubai/scheduler.cc.o: ../wubai/hook.h
@@ -411,11 +552,15 @@ CMakeFiles/wubai.dir/wubai/socket.cc.o: ../wubai/utils.h
 
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/address.h
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/bytearray.h
+CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/log.h
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/noncopyable.h
+CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/singleton.h
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/socket.h
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/socket_stream.cc
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/socket_stream.h
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/stream.h
+CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/thread.h
+CMakeFiles/wubai.dir/wubai/socket_stream.cc.o: ../wubai/utils.h
 
 CMakeFiles/wubai.dir/wubai/stream.cc.o: ../wubai/bytearray.h
 CMakeFiles/wubai.dir/wubai/stream.cc.o: ../wubai/stream.cc

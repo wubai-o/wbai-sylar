@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>wubai chat room</title>
+    </head>
+    <script type="text/javascript">
+        var websocket = null
+        function login() {
+            websocket = new WebSocket("ws://42.194.143.124:3333/wubai/chat");
+
+            websocket.onerror = function(evt) {
+                alert("onerror");
+            };
+            websocket.onopen = function() {
+                var o = {};
+                o.type = "login_request";
+                o.name = document.getElementById('tname').value;
+                websocket.send(JSON.stringify(o));
+            };
+            websocket.onmessage = function(e) {
+                alert("onmessage" + e.data);
+            };
+            websocket.onclose = function() {
+                alert("onclose")
+            };
+        }
+        alert("welcome wubai");
+
+        function sendmsg() {
+            var o = {};
+            o.type = "send_request";
+            o.msg = document.getElementById('msg').value;
+            websocket.send(JSON.stringify(o));
+        }
+    </script>
+    <body>
+        昵称:<input id="tname" type="text"/><button onclick="login()">登录</button><br/>
+        聊天信息:<input id="msg" type="text"/><button onclick="sendmsg()">发送</button><br/>
+        <div id="message">
+        </div>
+    </body>
+</html>

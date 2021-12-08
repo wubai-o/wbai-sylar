@@ -9,7 +9,6 @@ static wubai::Logger::ptr g_logger = WUBAI_LOG_ROOT();
 static wubai::ConfigVar<uint64_t>::ptr g_tcp_server_read_timeout = 
     wubai::Config::Lookup("tcp_server.read_timeout", (uint64_t)(60 * 1000 * 2), "tcp server read timeout");
 
-
 TcpServer::TcpServer(wubai::IOManager* worker, wubai::IOManager* accept_worker) 
     :m_worker(worker)
     ,m_acceptWorker(accept_worker)
@@ -92,6 +91,11 @@ void TcpServer::stop() {
         m_socks.clear();
     });
 }
+
+void TcpServer::setConf(const TcpServerConf& v) {
+    m_conf.reset(new TcpServerConf(v));
+}
+
 
 void TcpServer::handleClient(Socket::ptr client) {
     WUBAI_LOG_INFO(g_logger) << "handleClient: " << *client;

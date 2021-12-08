@@ -4,6 +4,7 @@
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../samples/my_http_server.cc
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/address.h
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/bytearray.h
+CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/config.h
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/fiber.h
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/hook.h
 CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o: ../wubai/http/http.h

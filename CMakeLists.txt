@@ -5,6 +5,9 @@ project(wubai)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror  -Wno-unused-function")
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/)
+
+
 set(LIB_SRC
     wubai/log.cc
     wubai/utils.cc
@@ -41,6 +44,14 @@ set(LIB_SRC
     wubai/http/ws_servlet.cc
     wubai/http/ws_server.cc
     wubai/http/ws_connection.cc
+    wubai/protocol.cc
+    wubai/module.cc
+    wubai/chat/resource_servlet.cc
+    wubai/chat/my_module.cc
+    wubai/library.cc
+    wubai/chat/protocol.cc
+    wubai/jsonutil.cc
+    wubai/chat/chat_servlet.cc
     )
 
 add_library(wubai SHARED ${LIB_SRC})
@@ -54,6 +65,7 @@ set(LIB_LIB
     yaml-cpp
     mysqlclient
     ssl
+    jsoncpp_static
     )
 
 add_executable(test tests/test.cc)
@@ -156,6 +168,13 @@ add_executable(test_hashutils tests/test_hashutils.cc)
 add_dependencies(test_hashutils wubai)
 target_link_libraries(test_hashutils ${LIB_LIB})
 
+add_executable(test_key tests/test_key.cc)
+add_dependencies(test_key wubai)
+target_link_libraries(test_key ${LIB_LIB})
+
+add_executable(main wubai/main.cc)
+add_dependencies(main wubai)
+target_link_libraries(main ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

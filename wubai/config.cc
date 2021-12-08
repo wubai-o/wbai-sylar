@@ -56,7 +56,7 @@ void Config::LoadFromYaml(const YAML::Node& root) {
 static std::map<std::string, uint64_t> s_file2modifytime;
 static wubai::Mutex s_mutex;
 
-void Config::LoadFromConfDir(const std::string& path) {
+void Config::LoadFromConfDir(const std::string& path, bool force) {
     std::string absPath = wubai::EnvMgr::GetInstance()->getAbsolutePath(path);
     std::vector<std::string> files;
     FSUtil::ListAllFiles(files, absPath, "yml");
@@ -65,7 +65,7 @@ void Config::LoadFromConfDir(const std::string& path) {
         lstat(i.c_str(), &st);
         {
             wubai::Mutex::Lock lock(s_mutex);
-            if(s_file2modifytime[i] == st.st_mtime) {
+            if(!force && s_file2modifytime[i] == st.st_mtime) {
                 continue;
             }
             s_file2modifytime[i] = st.st_mtime;

@@ -24,6 +24,24 @@ uint64_t GetCurrentMs();
 uint64_t GetCurrentUs();
 
 std::string formatTime(time_t time, const std::string& format = "%Y-%m-%d %H:%M:%S");
+std::string GetIPv4();
+
+template<class T>
+void delete_array(T* v) {
+    if(v) {
+        delete[] v;
+    }
+}
+
+class TypeUtil {
+public:
+    static int8_t ToChar(const std::string& str);
+    static int64_t Atoi(const std::string& str);
+    static double Atof(const std::string& str);
+    static int8_t ToChar(const char* str);
+    static int64_t Atoi(const char* str);
+    static double Atof(const char* str);
+};
 
 class FSUtil {
 public:

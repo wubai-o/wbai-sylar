@@ -5,6 +5,8 @@
 #include"http.h"
 #include"../endian.h"
 
+#include<sstream>
+
 namespace wubai {
 namespace http {
 
@@ -29,7 +31,55 @@ std::string WSFrameHead::toString() const {
        << "]";
     return ss.str();
 }
+HttpRequest::ptr WSSession::handleShake() {
+    HttpRequest::ptr req;
+    do {
+        req = recvRequest();
+        if(!req) {
+            WUBAI_LOG_INFO(g_logger) << "invalid http request";
+            break;
+        }
+        if(strcasecmp(req->getHeader("Upgrade").c_str(), "websocket")) {
+            WUBAI_LOG_INFO(g_logger) << "http header Upgrade != websocket";
+            break;
+        }
+        if(strcasecmp(req->getHeader("Connection").c_str(), "Upgrade")) {
+            WUBAI_LOG_INFO(g_logger) << "http header Connection != Upgrade";
+            break;
+        }
+        if(req->getHeaderAs<int>("Sec-webSocket-Version") != 13) {
+            WUBAI_LOG_INFO(g_logger) << "http header Sec-webSocket-Version != 13";
+            break;
+        }
+        std::string key = req->getHeader("Sec-WebSocket-Key");
+        if(key.empty()) {
+            WUBAI_LOG_INFO(g_logger) << "http header Sec-WebSocket-Key = null";
+            break;
+        }
 
+        std::string v = key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
+        v = wubai::base64encode(wubai::sha1sum(v));
+        req->setWebsocket(true);
+
+        auto rsp = req->createResponse();
+        rsp->setStatus(HttpStatus::SWITCHING_PROTOCOLS);
+        rsp->setWebsocket(true);
+        rsp->setReason("Web Socket Protocol Handshake");
+        rsp->setHeaders("Upgrade", "websocket");
+        rsp->setHeaders("Connection", "Upgrade");
+        rsp->setHeaders("Sec-WebSocket-Accept", v);
+        sendResponse(rsp);
+        WUBAI_LOG_INFO(g_logger) << *req;
+        WUBAI_LOG_INFO(g_logger) << *rsp;
+        return req;
+    } while(false);
+    if(req) {
+        WUBAI_LOG_INFO(g_logger) << *req;
+    }
+    return nullptr;
+}
+
+/*
 HttpRequest::ptr WSSession::handleShake() {
     HttpRequest::ptr req;
     do {
@@ -62,7 +112,7 @@ HttpRequest::ptr WSSession::handleShake() {
         auto rsp = req->createResponse();
         rsp->setStatus(HttpStatus::SWITCHING_PROTOCOLS);
         rsp->setWebsocket(true);
-        rsp->setReason("Web Socket Protocok Handshake");
+        rsp->setReason("Web Socket Protocol Handshake");
         rsp->setHeaders("Upgrade", "websocket");
         rsp->setHeaders("Connection", "Upgrade");
         rsp->setHeaders("Sec-WebSocket-Accept", v);
@@ -77,6 +127,7 @@ HttpRequest::ptr WSSession::handleShake() {
     }
     return nullptr;
 }
+*/
 
 WSFrameMessage::WSFrameMessage(int opcode, const std::string& data) 
     :m_opcode(opcode)
@@ -172,7 +223,8 @@ WSFrameMessage::ptr WSRecvMessage(Stream* stream, bool client) {
             }
 
             if(ws_head.fin) {
-                WUBAI_LOG_DEBUG(g_logger) << data;
+                std::ofstream ofs("/root/wubai/bin/html/data");
+                ofs << data;
                 return WSFrameMessage::ptr(new WSFrameMessage(opcode, std::move(data)));
             }
         } else {

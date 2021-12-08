@@ -7,6 +7,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/wubai/wubai/address.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/address.cc.o"
   "/root/wubai/wubai/application.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/application.cc.o"
   "/root/wubai/wubai/bytearray.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/bytearray.cc.o"
+  "/root/wubai/wubai/chat/chat_servlet.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o"
+  "/root/wubai/wubai/chat/my_module.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o"
+  "/root/wubai/wubai/chat/protocol.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o"
+  "/root/wubai/wubai/chat/resource_servlet.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o"
   "/root/wubai/wubai/config.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/config.cc.o"
   "/root/wubai/wubai/daemon.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/daemon.cc.o"
   "/root/wubai/wubai/env.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/env.cc.o"
@@ -27,9 +31,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/wubai/wubai/http/ws_servlet.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/http/ws_servlet.cc.o"
   "/root/wubai/wubai/http/ws_session.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/http/ws_session.cc.o"
   "/root/wubai/wubai/iomanager.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/iomanager.cc.o"
+  "/root/wubai/wubai/jsonutil.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/jsonutil.cc.o"
   "/root/wubai/wubai/keshe/local_server.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/keshe/local_server.cc.o"
   "/root/wubai/wubai/keshe/mymysql.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.o"
+  "/root/wubai/wubai/library.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/library.cc.o"
   "/root/wubai/wubai/log.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/log.cc.o"
+  "/root/wubai/wubai/module.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/module.cc.o"
+  "/root/wubai/wubai/protocol.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/protocol.cc.o"
   "/root/wubai/wubai/scheduler.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/scheduler.cc.o"
   "/root/wubai/wubai/socket.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/socket.cc.o"
   "/root/wubai/wubai/socket_stream.cc" "/root/wubai/build/CMakeFiles/wubai.dir/wubai/socket_stream.cc.o"
@@ -44,6 +52,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../"
   )
 
 # Targets to which this target links.

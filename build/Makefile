@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_key
+
+# Build rule for target.
+test_key: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_key
+.PHONY : test_key
+
+# fast build rule for target.
+test_key/fast:
+	$(MAKE) -f CMakeFiles/test_key.dir/build.make CMakeFiles/test_key.dir/build
+.PHONY : test_key/fast
+
+#=============================================================================
 # Target rules for targets named test_daemon
 
 # Build rule for target.
@@ -346,6 +359,19 @@ wubai: cmake_check_build_system
 wubai/fast:
 	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/build
 .PHONY : wubai/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named test_bytearray
@@ -937,6 +963,33 @@ tests/test_iomanager.cc.s:
 	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.s
 .PHONY : tests/test_iomanager.cc.s
 
+tests/test_key.o: tests/test_key.cc.o
+
+.PHONY : tests/test_key.o
+
+# target to build an object file
+tests/test_key.cc.o:
+	$(MAKE) -f CMakeFiles/test_key.dir/build.make CMakeFiles/test_key.dir/tests/test_key.cc.o
+.PHONY : tests/test_key.cc.o
+
+tests/test_key.i: tests/test_key.cc.i
+
+.PHONY : tests/test_key.i
+
+# target to preprocess a source file
+tests/test_key.cc.i:
+	$(MAKE) -f CMakeFiles/test_key.dir/build.make CMakeFiles/test_key.dir/tests/test_key.cc.i
+.PHONY : tests/test_key.cc.i
+
+tests/test_key.s: tests/test_key.cc.s
+
+.PHONY : tests/test_key.s
+
+# target to generate assembly for a file
+tests/test_key.cc.s:
+	$(MAKE) -f CMakeFiles/test_key.dir/build.make CMakeFiles/test_key.dir/tests/test_key.cc.s
+.PHONY : tests/test_key.cc.s
+
 tests/test_my_fiber.o: tests/test_my_fiber.cc.o
 
 .PHONY : tests/test_my_fiber.o
@@ -1206,6 +1259,114 @@ wubai/bytearray.s: wubai/bytearray.cc.s
 wubai/bytearray.cc.s:
 	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/bytearray.cc.s
 .PHONY : wubai/bytearray.cc.s
+
+wubai/chat/chat_servlet.o: wubai/chat/chat_servlet.cc.o
+
+.PHONY : wubai/chat/chat_servlet.o
+
+# target to build an object file
+wubai/chat/chat_servlet.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o
+.PHONY : wubai/chat/chat_servlet.cc.o
+
+wubai/chat/chat_servlet.i: wubai/chat/chat_servlet.cc.i
+
+.PHONY : wubai/chat/chat_servlet.i
+
+# target to preprocess a source file
+wubai/chat/chat_servlet.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.i
+.PHONY : wubai/chat/chat_servlet.cc.i
+
+wubai/chat/chat_servlet.s: wubai/chat/chat_servlet.cc.s
+
+.PHONY : wubai/chat/chat_servlet.s
+
+# target to generate assembly for a file
+wubai/chat/chat_servlet.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.s
+.PHONY : wubai/chat/chat_servlet.cc.s
+
+wubai/chat/my_module.o: wubai/chat/my_module.cc.o
+
+.PHONY : wubai/chat/my_module.o
+
+# target to build an object file
+wubai/chat/my_module.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o
+.PHONY : wubai/chat/my_module.cc.o
+
+wubai/chat/my_module.i: wubai/chat/my_module.cc.i
+
+.PHONY : wubai/chat/my_module.i
+
+# target to preprocess a source file
+wubai/chat/my_module.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/my_module.cc.i
+.PHONY : wubai/chat/my_module.cc.i
+
+wubai/chat/my_module.s: wubai/chat/my_module.cc.s
+
+.PHONY : wubai/chat/my_module.s
+
+# target to generate assembly for a file
+wubai/chat/my_module.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/my_module.cc.s
+.PHONY : wubai/chat/my_module.cc.s
+
+wubai/chat/protocol.o: wubai/chat/protocol.cc.o
+
+.PHONY : wubai/chat/protocol.o
+
+# target to build an object file
+wubai/chat/protocol.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o
+.PHONY : wubai/chat/protocol.cc.o
+
+wubai/chat/protocol.i: wubai/chat/protocol.cc.i
+
+.PHONY : wubai/chat/protocol.i
+
+# target to preprocess a source file
+wubai/chat/protocol.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/protocol.cc.i
+.PHONY : wubai/chat/protocol.cc.i
+
+wubai/chat/protocol.s: wubai/chat/protocol.cc.s
+
+.PHONY : wubai/chat/protocol.s
+
+# target to generate assembly for a file
+wubai/chat/protocol.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/protocol.cc.s
+.PHONY : wubai/chat/protocol.cc.s
+
+wubai/chat/resource_servlet.o: wubai/chat/resource_servlet.cc.o
+
+.PHONY : wubai/chat/resource_servlet.o
+
+# target to build an object file
+wubai/chat/resource_servlet.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o
+.PHONY : wubai/chat/resource_servlet.cc.o
+
+wubai/chat/resource_servlet.i: wubai/chat/resource_servlet.cc.i
+
+.PHONY : wubai/chat/resource_servlet.i
+
+# target to preprocess a source file
+wubai/chat/resource_servlet.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.i
+.PHONY : wubai/chat/resource_servlet.cc.i
+
+wubai/chat/resource_servlet.s: wubai/chat/resource_servlet.cc.s
+
+.PHONY : wubai/chat/resource_servlet.s
+
+# target to generate assembly for a file
+wubai/chat/resource_servlet.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.s
+.PHONY : wubai/chat/resource_servlet.cc.s
 
 wubai/config.o: wubai/config.cc.o
 
@@ -1747,6 +1908,33 @@ wubai/iomanager.cc.s:
 	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/iomanager.cc.s
 .PHONY : wubai/iomanager.cc.s
 
+wubai/jsonutil.o: wubai/jsonutil.cc.o
+
+.PHONY : wubai/jsonutil.o
+
+# target to build an object file
+wubai/jsonutil.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/jsonutil.cc.o
+.PHONY : wubai/jsonutil.cc.o
+
+wubai/jsonutil.i: wubai/jsonutil.cc.i
+
+.PHONY : wubai/jsonutil.i
+
+# target to preprocess a source file
+wubai/jsonutil.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/jsonutil.cc.i
+.PHONY : wubai/jsonutil.cc.i
+
+wubai/jsonutil.s: wubai/jsonutil.cc.s
+
+.PHONY : wubai/jsonutil.s
+
+# target to generate assembly for a file
+wubai/jsonutil.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/jsonutil.cc.s
+.PHONY : wubai/jsonutil.cc.s
+
 wubai/keshe/local_server.o: wubai/keshe/local_server.cc.o
 
 .PHONY : wubai/keshe/local_server.o
@@ -1801,6 +1989,33 @@ wubai/keshe/mymysql.cc.s:
 	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.s
 .PHONY : wubai/keshe/mymysql.cc.s
 
+wubai/library.o: wubai/library.cc.o
+
+.PHONY : wubai/library.o
+
+# target to build an object file
+wubai/library.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/library.cc.o
+.PHONY : wubai/library.cc.o
+
+wubai/library.i: wubai/library.cc.i
+
+.PHONY : wubai/library.i
+
+# target to preprocess a source file
+wubai/library.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/library.cc.i
+.PHONY : wubai/library.cc.i
+
+wubai/library.s: wubai/library.cc.s
+
+.PHONY : wubai/library.s
+
+# target to generate assembly for a file
+wubai/library.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/library.cc.s
+.PHONY : wubai/library.cc.s
+
 wubai/log.o: wubai/log.cc.o
 
 .PHONY : wubai/log.o
@@ -1827,6 +2042,87 @@ wubai/log.s: wubai/log.cc.s
 wubai/log.cc.s:
 	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/log.cc.s
 .PHONY : wubai/log.cc.s
+
+wubai/main.o: wubai/main.cc.o
+
+.PHONY : wubai/main.o
+
+# target to build an object file
+wubai/main.cc.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/wubai/main.cc.o
+.PHONY : wubai/main.cc.o
+
+wubai/main.i: wubai/main.cc.i
+
+.PHONY : wubai/main.i
+
+# target to preprocess a source file
+wubai/main.cc.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/wubai/main.cc.i
+.PHONY : wubai/main.cc.i
+
+wubai/main.s: wubai/main.cc.s
+
+.PHONY : wubai/main.s
+
+# target to generate assembly for a file
+wubai/main.cc.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/wubai/main.cc.s
+.PHONY : wubai/main.cc.s
+
+wubai/module.o: wubai/module.cc.o
+
+.PHONY : wubai/module.o
+
+# target to build an object file
+wubai/module.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/module.cc.o
+.PHONY : wubai/module.cc.o
+
+wubai/module.i: wubai/module.cc.i
+
+.PHONY : wubai/module.i
+
+# target to preprocess a source file
+wubai/module.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/module.cc.i
+.PHONY : wubai/module.cc.i
+
+wubai/module.s: wubai/module.cc.s
+
+.PHONY : wubai/module.s
+
+# target to generate assembly for a file
+wubai/module.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/module.cc.s
+.PHONY : wubai/module.cc.s
+
+wubai/protocol.o: wubai/protocol.cc.o
+
+.PHONY : wubai/protocol.o
+
+# target to build an object file
+wubai/protocol.cc.o:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/protocol.cc.o
+.PHONY : wubai/protocol.cc.o
+
+wubai/protocol.i: wubai/protocol.cc.i
+
+.PHONY : wubai/protocol.i
+
+# target to preprocess a source file
+wubai/protocol.cc.i:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/protocol.cc.i
+.PHONY : wubai/protocol.cc.i
+
+wubai/protocol.s: wubai/protocol.cc.s
+
+.PHONY : wubai/protocol.s
+
+# target to generate assembly for a file
+wubai/protocol.cc.s:
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/protocol.cc.s
+.PHONY : wubai/protocol.cc.s
 
 wubai/scheduler.o: wubai/scheduler.cc.o
 
@@ -2078,6 +2374,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_key"
 	@echo "... test_daemon"
 	@echo "... test_address"
 	@echo "... test_iomanager"
@@ -2097,6 +2394,7 @@ help:
 	@echo "... test_http_connection"
 	@echo "... test_hook"
 	@echo "... wubai"
+	@echo "... main"
 	@echo "... test_bytearray"
 	@echo "... test_http_parser"
 	@echo "... test_tcp_server"
@@ -2159,6 +2457,9 @@ help:
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"
+	@echo "... tests/test_key.o"
+	@echo "... tests/test_key.i"
+	@echo "... tests/test_key.s"
 	@echo "... tests/test_my_fiber.o"
 	@echo "... tests/test_my_fiber.i"
 	@echo "... tests/test_my_fiber.s"
@@ -2189,6 +2490,18 @@ help:
 	@echo "... wubai/bytearray.o"
 	@echo "... wubai/bytearray.i"
 	@echo "... wubai/bytearray.s"
+	@echo "... wubai/chat/chat_servlet.o"
+	@echo "... wubai/chat/chat_servlet.i"
+	@echo "... wubai/chat/chat_servlet.s"
+	@echo "... wubai/chat/my_module.o"
+	@echo "... wubai/chat/my_module.i"
+	@echo "... wubai/chat/my_module.s"
+	@echo "... wubai/chat/protocol.o"
+	@echo "... wubai/chat/protocol.i"
+	@echo "... wubai/chat/protocol.s"
+	@echo "... wubai/chat/resource_servlet.o"
+	@echo "... wubai/chat/resource_servlet.i"
+	@echo "... wubai/chat/resource_servlet.s"
 	@echo "... wubai/config.o"
 	@echo "... wubai/config.i"
 	@echo "... wubai/config.s"
@@ -2249,15 +2562,30 @@ help:
 	@echo "... wubai/iomanager.o"
 	@echo "... wubai/iomanager.i"
 	@echo "... wubai/iomanager.s"
+	@echo "... wubai/jsonutil.o"
+	@echo "... wubai/jsonutil.i"
+	@echo "... wubai/jsonutil.s"
 	@echo "... wubai/keshe/local_server.o"
 	@echo "... wubai/keshe/local_server.i"
 	@echo "... wubai/keshe/local_server.s"
 	@echo "... wubai/keshe/mymysql.o"
 	@echo "... wubai/keshe/mymysql.i"
 	@echo "... wubai/keshe/mymysql.s"
+	@echo "... wubai/library.o"
+	@echo "... wubai/library.i"
+	@echo "... wubai/library.s"
 	@echo "... wubai/log.o"
 	@echo "... wubai/log.i"
 	@echo "... wubai/log.s"
+	@echo "... wubai/main.o"
+	@echo "... wubai/main.i"
+	@echo "... wubai/main.s"
+	@echo "... wubai/module.o"
+	@echo "... wubai/module.i"
+	@echo "... wubai/module.s"
+	@echo "... wubai/protocol.o"
+	@echo "... wubai/protocol.i"
+	@echo "... wubai/protocol.s"
 	@echo "... wubai/scheduler.o"
 	@echo "... wubai/scheduler.i"
 	@echo "... wubai/scheduler.s"

@@ -330,7 +330,6 @@ private:
     std::string m_body;
     std::string m_reason;
     MapType m_headers;
-
 };
 
 std::ostream& operator<<(std::ostream& os, const HttpRequest& req);

@@ -1,14 +1,14 @@
 http_servers:
-  - address:  ["0.0.0.0:8020"]
+  - address:  ["0.0.0.0:8090", "127.0.0.1:8091", "/tmp/test.sock"]
     keepalive: 1
     timeout: 1000
     name: wubai/1.1
     accept_worker: accept
     process_worker: io
     type: http
-  - address:  ["0.0.0.0:8070"]
+  - address:  ["0.0.0.0:3333"]
     keepalive: 2
-    timeout: 6000
+    timeout: 1000
     name: wubai/1.2
     accept_worker: accept
     process_worker: io

@@ -3,8 +3,12 @@
 #include<iostream>
 #include<fstream>
 
+#include"../log.h"
+
 namespace wubai {
 namespace http {
+
+static wubai::Logger::ptr g_logger = WUBAI_LOG_ROOT();
 
 FunctionServlet::FunctionServlet(callback cb) 
     :Servlet("FunctionServlet")
@@ -85,6 +89,7 @@ Servlet::ptr ServletDispatch::getGlobServlet(const std::string& uri) {
 }
 
 Servlet::ptr ServletDispatch::getMatchedServlet(const std::string& uri) {
+    WUBAI_LOG_INFO(g_logger) << "getMatch" << uri;
     RWMutex::ReadLock lock(m_mutex);
     auto mit = m_datas.find(uri);
     if(mit != m_datas.end()) {

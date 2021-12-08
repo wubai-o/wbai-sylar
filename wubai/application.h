@@ -15,6 +15,9 @@ public:
     bool init(int argc, char** argv);
     bool run();
 
+    bool getServer(const std::string& type, std::vector<TcpServer::ptr>& svrs);
+    void listAllServer(std::map<std::string, std::vector<TcpServer::ptr> >& servers);
+
 private:
     int main(int argc, char** argv);
     int run_fiber();

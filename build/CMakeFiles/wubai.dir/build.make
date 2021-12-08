@@ -900,6 +900,198 @@ CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o.provides: CMakeFiles/wubai.di
 CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o
 
 
+CMakeFiles/wubai.dir/wubai/protocol.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/protocol.cc.o: ../wubai/protocol.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/wubai.dir/wubai/protocol.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/protocol.cc.o -c /root/wubai/wubai/protocol.cc
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/protocol.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/protocol.cc > CMakeFiles/wubai.dir/wubai/protocol.cc.i
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/protocol.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/protocol.cc -o CMakeFiles/wubai.dir/wubai/protocol.cc.s
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/protocol.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.o.provides: CMakeFiles/wubai.dir/wubai/protocol.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/protocol.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/protocol.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/protocol.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/protocol.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/module.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/module.cc.o: ../wubai/module.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/wubai.dir/wubai/module.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/module.cc.o -c /root/wubai/wubai/module.cc
+
+CMakeFiles/wubai.dir/wubai/module.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/module.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/module.cc > CMakeFiles/wubai.dir/wubai/module.cc.i
+
+CMakeFiles/wubai.dir/wubai/module.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/module.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/module.cc -o CMakeFiles/wubai.dir/wubai/module.cc.s
+
+CMakeFiles/wubai.dir/wubai/module.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/module.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/module.cc.o.provides: CMakeFiles/wubai.dir/wubai/module.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/module.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/module.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/module.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/module.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o: ../wubai/chat/resource_servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o -c /root/wubai/wubai/chat/resource_servlet.cc
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/chat/resource_servlet.cc > CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.i
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/chat/resource_servlet.cc -o CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.s
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.provides: CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o: ../wubai/chat/my_module.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o -c /root/wubai/wubai/chat/my_module.cc
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/chat/my_module.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/chat/my_module.cc > CMakeFiles/wubai.dir/wubai/chat/my_module.cc.i
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/chat/my_module.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/chat/my_module.cc -o CMakeFiles/wubai.dir/wubai/chat/my_module.cc.s
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.provides: CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/library.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/library.cc.o: ../wubai/library.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/wubai.dir/wubai/library.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/library.cc.o -c /root/wubai/wubai/library.cc
+
+CMakeFiles/wubai.dir/wubai/library.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/library.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/library.cc > CMakeFiles/wubai.dir/wubai/library.cc.i
+
+CMakeFiles/wubai.dir/wubai/library.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/library.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/library.cc -o CMakeFiles/wubai.dir/wubai/library.cc.s
+
+CMakeFiles/wubai.dir/wubai/library.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/library.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/library.cc.o.provides: CMakeFiles/wubai.dir/wubai/library.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/library.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/library.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/library.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/library.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o: ../wubai/chat/protocol.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o -c /root/wubai/wubai/chat/protocol.cc
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/chat/protocol.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/chat/protocol.cc > CMakeFiles/wubai.dir/wubai/chat/protocol.cc.i
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/chat/protocol.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/chat/protocol.cc -o CMakeFiles/wubai.dir/wubai/chat/protocol.cc.s
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.provides: CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o: ../wubai/jsonutil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/wubai.dir/wubai/jsonutil.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/jsonutil.cc.o -c /root/wubai/wubai/jsonutil.cc
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/jsonutil.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/jsonutil.cc > CMakeFiles/wubai.dir/wubai/jsonutil.cc.i
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/jsonutil.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/jsonutil.cc -o CMakeFiles/wubai.dir/wubai/jsonutil.cc.s
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.provides: CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/jsonutil.cc.o
+
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: CMakeFiles/wubai.dir/flags.make
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o: ../wubai/chat/chat_servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o -c /root/wubai/wubai/chat/chat_servlet.cc
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/wubai/wubai/chat/chat_servlet.cc > CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.i
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/wubai/wubai/chat/chat_servlet.cc -o CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.s
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.requires:
+
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.requires
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.provides: CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.requires
+	$(MAKE) -f CMakeFiles/wubai.dir/build.make CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.provides.build
+.PHONY : CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.provides
+
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.provides.build: CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o
+
+
 # Object files for target wubai
 wubai_OBJECTS = \
 "CMakeFiles/wubai.dir/wubai/log.cc.o" \
@@ -936,7 +1128,15 @@ wubai_OBJECTS = \
 "CMakeFiles/wubai.dir/wubai/http/ws_session.cc.o" \
 "CMakeFiles/wubai.dir/wubai/http/ws_servlet.cc.o" \
 "CMakeFiles/wubai.dir/wubai/http/ws_server.cc.o" \
-"CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o"
+"CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o" \
+"CMakeFiles/wubai.dir/wubai/protocol.cc.o" \
+"CMakeFiles/wubai.dir/wubai/module.cc.o" \
+"CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o" \
+"CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o" \
+"CMakeFiles/wubai.dir/wubai/library.cc.o" \
+"CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o" \
+"CMakeFiles/wubai.dir/wubai/jsonutil.cc.o" \
+"CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o"
 
 # External object files for target wubai
 wubai_EXTERNAL_OBJECTS =
@@ -976,9 +1176,17 @@ wubai_EXTERNAL_OBJECTS =
 ../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/http/ws_servlet.cc.o
 ../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/http/ws_server.cc.o
 ../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/protocol.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/module.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/library.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/jsonutil.cc.o
+../lib/libwubai.so: CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o
 ../lib/libwubai.so: CMakeFiles/wubai.dir/build.make
 ../lib/libwubai.so: CMakeFiles/wubai.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX shared library ../lib/libwubai.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/wubai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX shared library ../lib/libwubai.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wubai.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1021,6 +1229,14 @@ CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/http/ws_session.cc.o.r
 CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/http/ws_servlet.cc.o.requires
 CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/http/ws_server.cc.o.requires
 CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/protocol.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/module.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/library.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/jsonutil.cc.o.requires
+CMakeFiles/wubai.dir/requires: CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o.requires
 
 .PHONY : CMakeFiles/wubai.dir/requires
 

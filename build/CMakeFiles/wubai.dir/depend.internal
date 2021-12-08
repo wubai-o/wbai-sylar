@@ -27,10 +27,15 @@ CMakeFiles/wubai.dir/wubai/application.cc.o
  /root/wubai/wubai/http/http_session.h
  /root/wubai/wubai/http/httpclient_parser.h
  /root/wubai/wubai/http/servlet.h
+ /root/wubai/wubai/http/ws_server.h
+ /root/wubai/wubai/http/ws_servlet.h
+ /root/wubai/wubai/http/ws_session.h
  /root/wubai/wubai/iomanager.h
  /root/wubai/wubai/log.h
  /root/wubai/wubai/macro.h
+ /root/wubai/wubai/module.h
  /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/protocol.h
  /root/wubai/wubai/scheduler.h
  /root/wubai/wubai/singleton.h
  /root/wubai/wubai/socket.h
@@ -47,6 +52,91 @@ CMakeFiles/wubai.dir/wubai/bytearray.cc.o
  /root/wubai/wubai/log.h
  /root/wubai/wubai/noncopyable.h
  /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/chat/chat_servlet.cc.o
+ /root/wubai/wubai/address.h
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/chat/chat_servlet.cc
+ /root/wubai/wubai/chat/chat_servlet.h
+ /root/wubai/wubai/chat/protocol.h
+ /root/wubai/wubai/config.h
+ /root/wubai/wubai/http/http.h
+ /root/wubai/wubai/http/http11_common.h
+ /root/wubai/wubai/http/http11_parser.h
+ /root/wubai/wubai/http/http_session.h
+ /root/wubai/wubai/http/httpclient_parser.h
+ /root/wubai/wubai/http/servlet.h
+ /root/wubai/wubai/http/ws_servlet.h
+ /root/wubai/wubai/http/ws_session.h
+ /root/wubai/wubai/log.h
+ /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/socket.h
+ /root/wubai/wubai/socket_stream.h
+ /root/wubai/wubai/stream.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/chat/my_module.cc.o
+ /root/wubai/wubai/address.h
+ /root/wubai/wubai/application.h
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/chat/chat_servlet.h
+ /root/wubai/wubai/chat/my_module.cc
+ /root/wubai/wubai/chat/my_module.h
+ /root/wubai/wubai/chat/resource_servlet.h
+ /root/wubai/wubai/config.h
+ /root/wubai/wubai/daemon.h
+ /root/wubai/wubai/env.h
+ /root/wubai/wubai/fiber.h
+ /root/wubai/wubai/hook.h
+ /root/wubai/wubai/http/http.h
+ /root/wubai/wubai/http/http11_common.h
+ /root/wubai/wubai/http/http11_parser.h
+ /root/wubai/wubai/http/http_server.h
+ /root/wubai/wubai/http/http_session.h
+ /root/wubai/wubai/http/httpclient_parser.h
+ /root/wubai/wubai/http/servlet.h
+ /root/wubai/wubai/http/ws_server.h
+ /root/wubai/wubai/http/ws_servlet.h
+ /root/wubai/wubai/http/ws_session.h
+ /root/wubai/wubai/iomanager.h
+ /root/wubai/wubai/log.h
+ /root/wubai/wubai/macro.h
+ /root/wubai/wubai/module.h
+ /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/protocol.h
+ /root/wubai/wubai/scheduler.h
+ /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/socket.h
+ /root/wubai/wubai/socket_stream.h
+ /root/wubai/wubai/stream.h
+ /root/wubai/wubai/tcp_server.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/timer.h
+ /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/chat/protocol.cc.o
+ /root/wubai/wubai/chat/protocol.cc
+ /root/wubai/wubai/chat/protocol.h
+ /root/wubai/wubai/jsonutil.h
+ /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/chat/resource_servlet.cc.o
+ /root/wubai/wubai/address.h
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/chat/resource_servlet.cc
+ /root/wubai/wubai/chat/resource_servlet.h
+ /root/wubai/wubai/http/http.h
+ /root/wubai/wubai/http/http11_common.h
+ /root/wubai/wubai/http/http11_parser.h
+ /root/wubai/wubai/http/http_session.h
+ /root/wubai/wubai/http/httpclient_parser.h
+ /root/wubai/wubai/http/servlet.h
+ /root/wubai/wubai/log.h
+ /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/socket.h
+ /root/wubai/wubai/socket_stream.h
+ /root/wubai/wubai/stream.h
  /root/wubai/wubai/thread.h
  /root/wubai/wubai/utils.h
 CMakeFiles/wubai.dir/wubai/config.cc.o
@@ -162,6 +252,7 @@ CMakeFiles/wubai.dir/wubai/http/http_parser.cc.o
 CMakeFiles/wubai.dir/wubai/http/http_server.cc.o
  /root/wubai/wubai/address.h
  /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/config.h
  /root/wubai/wubai/fiber.h
  /root/wubai/wubai/hook.h
  /root/wubai/wubai/http/http.h
@@ -213,11 +304,14 @@ CMakeFiles/wubai.dir/wubai/http/servlet.cc.o
  /root/wubai/wubai/http/httpclient_parser.h
  /root/wubai/wubai/http/servlet.cc
  /root/wubai/wubai/http/servlet.h
+ /root/wubai/wubai/log.h
  /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/singleton.h
  /root/wubai/wubai/socket.h
  /root/wubai/wubai/socket_stream.h
  /root/wubai/wubai/stream.h
  /root/wubai/wubai/thread.h
+ /root/wubai/wubai/utils.h
 CMakeFiles/wubai.dir/wubai/http/ws_connection.cc.o
  /root/wubai/wubai/address.h
  /root/wubai/wubai/bytearray.h
@@ -325,6 +419,10 @@ CMakeFiles/wubai.dir/wubai/iomanager.cc.o
  /root/wubai/wubai/thread.h
  /root/wubai/wubai/timer.h
  /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/jsonutil.cc.o
+ /root/wubai/wubai/jsonutil.cc
+ /root/wubai/wubai/jsonutil.h
+ /root/wubai/wubai/utils.h
 CMakeFiles/wubai.dir/wubai/keshe/local_server.cc.o
  /root/wubai/wubai/address.h
  /root/wubai/wubai/bytearray.h
@@ -374,6 +472,20 @@ CMakeFiles/wubai.dir/wubai/keshe/mymysql.cc.o
  /usr/include/mysql/mysql_time.h
  /usr/include/mysql/mysql_version.h
  /usr/include/mysql/typelib.h
+CMakeFiles/wubai.dir/wubai/library.cc.o
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/config.h
+ /root/wubai/wubai/env.h
+ /root/wubai/wubai/library.cc
+ /root/wubai/wubai/library.h
+ /root/wubai/wubai/log.h
+ /root/wubai/wubai/module.h
+ /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/protocol.h
+ /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/stream.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/utils.h
 CMakeFiles/wubai.dir/wubai/log.cc.o
  /root/wubai/wubai/config.h
  /root/wubai/wubai/log.cc
@@ -382,6 +494,35 @@ CMakeFiles/wubai.dir/wubai/log.cc.o
  /root/wubai/wubai/singleton.h
  /root/wubai/wubai/thread.h
  /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/module.cc.o
+ /root/wubai/wubai/address.h
+ /root/wubai/wubai/application.h
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/config.h
+ /root/wubai/wubai/daemon.h
+ /root/wubai/wubai/env.h
+ /root/wubai/wubai/fiber.h
+ /root/wubai/wubai/hook.h
+ /root/wubai/wubai/iomanager.h
+ /root/wubai/wubai/library.h
+ /root/wubai/wubai/log.h
+ /root/wubai/wubai/macro.h
+ /root/wubai/wubai/module.cc
+ /root/wubai/wubai/module.h
+ /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/protocol.h
+ /root/wubai/wubai/scheduler.h
+ /root/wubai/wubai/singleton.h
+ /root/wubai/wubai/socket.h
+ /root/wubai/wubai/stream.h
+ /root/wubai/wubai/tcp_server.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/timer.h
+ /root/wubai/wubai/utils.h
+CMakeFiles/wubai.dir/wubai/protocol.cc.o
+ /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/protocol.cc
+ /root/wubai/wubai/protocol.h
 CMakeFiles/wubai.dir/wubai/scheduler.cc.o
  /root/wubai/wubai/fiber.h
  /root/wubai/wubai/hook.h
@@ -412,11 +553,15 @@ CMakeFiles/wubai.dir/wubai/socket.cc.o
 CMakeFiles/wubai.dir/wubai/socket_stream.cc.o
  /root/wubai/wubai/address.h
  /root/wubai/wubai/bytearray.h
+ /root/wubai/wubai/log.h
  /root/wubai/wubai/noncopyable.h
+ /root/wubai/wubai/singleton.h
  /root/wubai/wubai/socket.h
  /root/wubai/wubai/socket_stream.cc
  /root/wubai/wubai/socket_stream.h
  /root/wubai/wubai/stream.h
+ /root/wubai/wubai/thread.h
+ /root/wubai/wubai/utils.h
 CMakeFiles/wubai.dir/wubai/stream.cc.o
  /root/wubai/wubai/bytearray.h
  /root/wubai/wubai/stream.cc
